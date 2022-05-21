@@ -20,13 +20,17 @@
                     <!-- Nav -->
                     <nav class="nav">
                         <a class="nav__link active" href="#">HOME</a>
-                        <a class="nav__link" href="#">ABOUT</a> 
+                        <a class="nav__link" href="#" data-scroll="#features">ABOUT</a> 
                         <a class="nav__link" href="#">EXPERTISE</a> 
                         <a class="nav__link" href="#">TEAMS</a> 
                         <a class="nav__link" href="#">WORKS</a> 
                         <a class="nav__link" href="#">PEOPLE SAY</a>
                         <a class="nav__link" href="#">CONTACT</a>
                     </nav>
+
+                    <button class="burger" type="button" id="navToggle">
+                        <span class="burger__item">Menu</span>
+                    </button>
                 </div>
             </div>
         </header> 
@@ -55,19 +59,19 @@
                         <div class="slider__inner">
                             <div class="slider__item active">
                                 <span class="slider__num">01</span>
-                                Intro                  
+                                <span class="slider_name">Intro </span>                 
                             </div>
                             <div class="slider__item">
                                 <span class="slider__num">02</span>
-                                Work
+                                <span class="slider_name">Work</span>
                             </div>
                             <div class="slider__item">
                                 <span class="slider__num">03</span>
-                                About
+                                <span class="slider_name">About</span>
                             </div>
                             <div class="slider__item">
                                 <span class="slider__num">04</span>
-                                Contacts    
+                                <span class="slider_name">Contacts</span>    
                             </div>
                         </div>
                     </div>
@@ -127,7 +131,7 @@
                         </div>
                     </div>
 
-                    <div class="features">
+                    <div class="features" id="features">
 
                         <div class="features__item">
                             <img src="./assets/img/icons/icon_tv_.png" alt="TV" class="svg__icon">

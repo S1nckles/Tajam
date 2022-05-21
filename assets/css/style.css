@@ -151,6 +151,49 @@ h1, h2, h3, h4, h5, h6 {
     color: #00E0D0;
 }
 
+/* Burger */
+
+.burger {
+    display: none;
+    padding: 9px 2px;
+
+    background: none;
+    border: 0;
+    cursor: pointer;
+}
+
+.burger__item {
+    display: block;
+    width: 30px;
+    height: 3px;
+
+    background-color: #00E0D0;
+    font-size: 0;
+    color: transparent;
+    
+    position: relative;
+}
+
+.burger__item::before, .burger__item::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+
+    background-color: #00E0D0;
+
+    position: absolute;
+    left: 0;
+    z-index: 1;
+}
+
+.burger__item::before {
+    top: -8px;
+}
+
+.burger__item::after {
+    bottom: -8px;
+}
+
 /* Button */
 .btn {
     display: inline-block;
@@ -511,7 +554,7 @@ h1, h2, h3, h4, h5, h6 {
     flex-direction: column;    /*Виравнывает текст*/
     justify-content: center;    /*Как с параграфом на сайте*/
     width: 100% ;
-    height: 300px;
+    height: 270px;
     text-align: center;
 
     background: linear-gradient(90deg, #ffffff 0%, #ffffff 100%);
@@ -1030,10 +1073,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
-@media (max-width: 1992px) {
-
-}
-
 @media (max-width: 1999px) {
     /* .works__photo {
         height: 282px;
@@ -1181,7 +1220,7 @@ h1, h2, h3, h4, h5, h6 {
 
     .testimonial__text {
         padding: 0;
-        width: 800px
+        width: 100%;
     }
 
     .testimonial__paragraph {
@@ -1524,3 +1563,185 @@ h1, h2, h3, h4, h5, h6 {
     }
 
 }
+
+@media (max-width: 750px) {
+
+    /* Intro */
+
+    .intro__title {
+        font-size: 18px;
+    }
+
+    .intro__subTitle {
+        width: 460px;
+    }
+
+    .slider__item {
+        padding: 10px 0 20px;
+    }
+
+    .slider__num {
+        font-size: 18px;
+        font-weight: 400;
+    }
+
+    .slider_name {
+        display: none;
+    }
+
+    /* Nav */
+    .nav {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+
+        background-color: white;
+        text-align: right;
+
+        right: 0;
+        top: 100%;
+        position: absolute;
+    }
+
+    .nav.show {
+        display: flex;
+    }
+
+    .nav__link {
+        padding: 9px 15px;
+    }
+
+    /* Burger */
+    .burger {
+        display: block;
+    }
+
+    /* About */
+
+    .about__img {
+        height: 140px;
+        width: 140px;
+    }
+
+    .about__btn {
+        padding: 6px 15px;
+    }
+    
+    /* Team */
+    .team__command {
+        display: block;
+    }
+
+    .command__person {
+        padding: 10px 5px;
+        margin: 20px auto;
+        width: 220px;
+    }
+
+    .name__person {
+        padding: 17px 0 0;
+        font-size: 13px;
+    }
+    .profession {
+        padding-bottom: 17px;
+        font-size: 13px;
+    }
+
+    /* Testemonials */
+
+    .testimonial__paragraph {
+        width: 450px;
+        margin-bottom: 15px;
+    }
+
+}
+
+@media (max-width: 561px) {
+    /* About */
+
+    .section__about {
+        height: 265px;
+    }
+
+    .about__img__container {
+        display: none;
+    }
+
+    .about__title {
+        font-size: 18px;
+        /* display: flex; */
+        /* justify-content: center; */
+    }
+
+    .about__text {
+        font-size: 12px;
+        width: 80%;
+    }
+
+    .about__btn {
+        font-size: 10px;
+        margin: 0;
+    }
+
+    /* Features */
+
+    
+
+    .info__title {
+        font-size: 15px;
+    }
+
+    .info__subTitle {
+        font-size: 12px;
+    }
+
+    .info__subTitle:after {
+        margin: 18px auto 70px;
+    }
+
+    .features {
+        margin: 70px 0 95px;
+    }
+
+    .svg__icon {
+        width: 40px;
+    }
+    
+    .features__title {
+        font-size: 10px;
+    }
+
+    .features__text {
+        width: 270px;
+        font-size: 13px;
+    }
+
+    /* Work */
+
+    .Our__works {
+        font-size: 18px;
+    }
+
+    .works__photo {
+        width: 50%;
+    }
+
+    /* testemonials */
+
+    .testimonial__paragraph {
+        font-size: 11px;  
+    }
+
+    /* Contact */
+
+    .title__contact__info {
+        font-size: 15px;
+    }
+
+    /* Footer */
+    .help__items {
+        font-size: 10px;
+        padding: 0 10px;
+    }
+}
+
