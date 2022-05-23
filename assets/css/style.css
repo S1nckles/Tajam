@@ -92,7 +92,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .logo__img {
-    margin-top: 10px;
+    margin: 10px 0 0 10px;
 
     width: 50px;
     height: 50px;
@@ -1065,26 +1065,44 @@ h1, h2, h3, h4, h5, h6 {
 
 @media (max-width: 2560px) {
 
+    /* Intro */
+    .intro__subTitle {
+        max-width: 800px;
+    }
+
     /* Play */
     .control.play .right {
         margin: -0.5px;
     }
 
+    /* Testimonials */
+
+    .testimonials {
+        height: 40vh;
+    }
+
 }
 
-
-@media (max-width: 1999px) {
-    /* .works__photo {
-        height: 282px;
-    } */
+@media (max-width: 2090px) {
+    .testimonials {
+        height: 60vh;
+    }
 }
-
 
 @media (max-width: 1440px) {
 
     /* Works */
     .works__photo {
         height: 250px;
+    }
+
+    /* Testimonials */
+    .testimonials {
+        height: 70vh;
+    }
+
+    .section__about {
+        height: 35vh;
     }
 }
 
@@ -1213,6 +1231,10 @@ h1, h2, h3, h4, h5, h6 {
     }
 
     /* Testemonials */
+
+    .testemonials {
+        height: 60vh;
+    }
 
     .testimonial__skob {
         font-size: 100px;
@@ -1647,7 +1669,11 @@ h1, h2, h3, h4, h5, h6 {
         font-size: 13px;
     }
 
-    /* Testemonials */
+    /* Testimonials */
+
+    .testimonials {
+        height: 400px;
+    }
 
     .testimonial__paragraph {
         width: 450px;
@@ -1657,6 +1683,18 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 @media (max-width: 561px) {
+
+    /* Intro */
+
+    .intro__inner {
+        width: 100%;
+        min-width: 0;
+    }
+
+    .intro__subTitle {
+        width: 100%;
+    }
+
     /* About */
 
     .section__about {
@@ -1712,7 +1750,7 @@ h1, h2, h3, h4, h5, h6 {
     }
 
     .features__text {
-        width: 270px;
+        width: 100%;
         font-size: 13px;
     }
 
@@ -1728,20 +1766,156 @@ h1, h2, h3, h4, h5, h6 {
 
     /* testemonials */
 
+    .testemonials {
+        padding: 0 0 130px;
+        height: 400px;
+    }
+
     .testimonial__paragraph {
-        font-size: 11px;  
+        font-size: 11px;
+        width: 100%;  
     }
 
     /* Contact */
+
+    .contact__form {
+        width: 70%;
+        margin-bottom: 50px;
+    }
+
+    .contact__info {
+        margin-right: 0px;
+    }
+
+    .contact__placeholder {
+        margin: 0 10px;
+    }
+
+    .contact__info {
+        margin: 12px 10px;
+    }
+
+    .contact__form .textarea {
+        height: 125px;
+        margin: 12px 10px;
+    }
+
+    .btn__c {
+        margin: 0 10px;
+    }
 
     .title__contact__info {
         font-size: 15px;
     }
 
+    /* Client */
+
+    .client:before {
+        width: 80%;
+    }
+
+    .client .logo {
+        height: 350px;
+        width: 100%;
+    }
+
+    .left__logo {
+        width: 50%;
+        margin-left: 10px;
+        height: 475px;
+    }
+    .right__logo {
+        margin-right: 10px;
+        width: 50%;
+        height: 475px;
+    }
+
+    .right__logo .CompanyLogo {
+        width: 50%;
+    }
+    .left__logo .CompanyLogo {
+        width: 50%;
+    }
+
     /* Footer */
+
+    .descriptio__text {
+        width: 100%;
+    }
+
+    .address {
+        width: 100%;
+    }
+
     .help__items {
         font-size: 10px;
         padding: 0 10px;
     }
+
+    .footer__addInfo {
+        display: block;
+        text-align: center;
+    }
+
+    .copyright {
+        text-align: center;
+    }
+
+
 }
 
+@media (max-width: 385px) {
+
+    /* About */
+
+    .section__about {
+        height: 320px;
+    }
+
+    /* Team */
+
+    .joinUs__text {
+        font-size: 12px;
+        line-height: 16px;
+    }
+
+    /* Works */
+
+    .title__works {
+        display: block;
+    }
+
+    .info__works {
+        font-size: 13px;
+        text-align: left;
+    }
+
+    .works__photo {
+        width: 100%;
+    }
+
+    
+    /* Testimonials */
+
+    .testimonials {
+        height: 450px;
+    }
+
+    .testimonial__skob {
+        font-size: 80px;
+    }
+
+    .testimonial__paragraph {
+        height: 150px;
+        font-size: 10px;
+    }
+
+    .testimonial__author {
+        margin-top: 35px;
+        font-size: 12px;
+    }
+
+    .author__profession {
+        font-size: 11px;
+    }
+}
